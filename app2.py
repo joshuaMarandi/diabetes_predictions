@@ -75,5 +75,4 @@ def visualizations():
     return render_template('visualizations.html', graph_html=graph_html)
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
-
+    app.run(debug=True)
