@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Prediction Result</h1>
+    <div class="result-box">
+        <p>{{ result }}</p>
+        <h2>Explanation:</h2>
+        <ul>
+            <li><strong>Pregnancies:</strong> {{ features[0] }} (Higher values may increase risk.)</li>
+            <li><strong>Glucose:</strong> {{ features[1] }} (Glucose levels over 140 are a concern.)</li>
+            <li><strong>Blood Pressure:</strong> {{ features[2] }} (Normal is around 80–120.)</li>
+            <li><strong>BMI:</strong> {{ features[5] }} (A BMI > 25 may increase risk.)</li>
+        </ul>
+        <a href="/">Make Another Prediction</a>
+    </div>
+</body>
+</html>

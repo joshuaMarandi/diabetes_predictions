@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Diabetes Prediction</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Diabetes Prediction Using SVM</h1>
+    <form action="/predict" method="POST">
+        <label>Pregnancies:</label>
+        <input type="number" name="pregnancies" step="any" required>
+        <label>Glucose:</label>
+        <input type="number" name="glucose" step="any" required>
+        <label>Blood Pressure:</label>
+        <input type="number" name="blood_pressure" step="any" required>
+        <label>Skin Thickness:</label>
+        <input type="number" name="skin_thickness" step="any" required>
+        <label>Insulin:</label>
+        <input type="number" name="insulin" step="any" required>
+        <label>BMI:</label>
+        <input type="number" name="bmi" step="any" required>
+        <label>Diabetes Pedigree Function:</label>
+        <input type="number" name="diabetes_pedigree_function" step="any" required>
+        <label>Age:</label>
+        <input type="number" name="age" step="any" required>
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>
