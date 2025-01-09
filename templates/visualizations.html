@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Visualizations</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Data Visualizations</h1>
+    <div>
+        {{ graph_html | safe }}
+    </div>
+    <a href="/">Go Back</a>
+</body>
+</html>
