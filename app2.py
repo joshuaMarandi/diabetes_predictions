@@ -8,7 +8,6 @@ model = joblib.load('svm_diabetes_model.pkl')
 
 # Initialize Flask app
 app = Flask(__name__)
-
 # Global variable to store user data for visualization
 user_data = []
 
